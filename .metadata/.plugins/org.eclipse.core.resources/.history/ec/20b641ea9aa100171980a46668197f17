@@ -1,0 +1,16 @@
+
+public class Shape {
+	private int width, height;
+	private String type;
+	
+	public Shape(String t, int w, int h) {
+		type = t;
+		width = w;
+		height = h;
+	}
+	
+	public double getArea() {
+		return 0;
+	}
+	
+}

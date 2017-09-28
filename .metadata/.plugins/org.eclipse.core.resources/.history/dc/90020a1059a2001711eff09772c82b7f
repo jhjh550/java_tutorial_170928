@@ -1,0 +1,40 @@
+
+public class MyClass {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account a1 = new Account();
+		a1.deposit(1000);
+		
+		Account a2 = new Account();
+		a2.deposit(2000);
+		
+		Shape s1 = new Shape("삼각형", 3, 1);
+		System.out.println(s1.getArea());
+		
+		Shape s2 = new Shape("사각형", 200, 300);
+		
+		
+		Customer c1 = new Customer();
+		Order d1 = new Order();
+		c1.addOrder(0, d1);
+		
+		Order d2= new Order();
+		c1.addOrder(1, d2);
+		
+		Manager m1 = new Manager();
+		m1.addOrder(0, d1);
+		m1.addOrder(1, d2);
+		
+		d2.status = "발송";
+		
+		
+		
+	}
+
+}
+
+
+
+
+

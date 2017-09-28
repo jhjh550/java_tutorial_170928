@@ -1,0 +1,25 @@
+package myproject;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MyDietManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		ArrayList<Food> myList = new ArrayList<Food>();
+		
+		while(true) {		
+			System.out.println("음식명을 입력해주세요.");
+			String name = s.next();
+			System.out.println("열량을 입력해주세요.");
+			int kcal = s.nextInt();
+			
+			Food f = new Food(name, kcal);
+			myList.add(f);
+		}
+	}
+
+}

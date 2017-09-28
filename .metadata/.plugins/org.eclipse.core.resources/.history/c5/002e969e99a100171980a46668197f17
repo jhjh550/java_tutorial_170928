@@ -1,0 +1,10 @@
+
+public class Shape {
+	private int width, height;
+	private String type;
+	
+	public float getArea() {
+		return 0;
+	}
+	
+}

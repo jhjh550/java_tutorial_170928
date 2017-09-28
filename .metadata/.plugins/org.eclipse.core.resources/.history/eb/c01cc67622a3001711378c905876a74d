@@ -1,0 +1,17 @@
+package myproject;
+
+import java.util.ArrayList;
+
+public class MyDietManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		while(true) {
+			Food f = new Food("coffee", 500);
+			ArrayList<Food> myList = new ArrayList<Food>();
+			myList.add(f);
+		}
+	}
+
+}

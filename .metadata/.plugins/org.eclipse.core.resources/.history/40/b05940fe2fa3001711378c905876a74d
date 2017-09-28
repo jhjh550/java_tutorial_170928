@@ -1,0 +1,63 @@
+package myproject;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MyDietManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		ArrayList<Food> myList = new ArrayList<Food>();
+		
+		while(true) {	
+			System.out.println("동작을 입력해주세요.");
+			System.out.println("1. 데이터 입력");
+			System.out.println("2. 데이터 출력");
+			int type = s.nextInt();
+			s.nextLine();
+			
+			if(type == 1) {			
+				System.out.println("날짜를 입력해주세요.");
+				String date = s.nextLine();
+				
+				System.out.println("음식명을 입력해주세요.");
+				String name = s.nextLine();
+				
+				System.out.println("열량을 입력해주세요.");
+				int kcal = s.nextInt();				
+				
+				Food f = new Food(name, kcal, date);
+				myList.add(f);
+			}else if(type ==2) {
+				for(int i=0;i<myList.size(); i++) {
+					Food f = myList.get(i);
+					System.out.println("name : "+f.getName() + 
+							" kcal : "+f.getKcal());
+				}
+				
+				System.out.println("검색할 날짜를 입력해 주세요 ex) 2017-9-27");
+				String date = s.nextLine();
+				for(int i=0; i<myList.size(); i++) {
+					Food f = myList.get(i);
+					if(date.equals(f.getDate())) {
+						System.out.println("name : "+f.getName() + 
+								" kcal : "+f.getKcal());
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

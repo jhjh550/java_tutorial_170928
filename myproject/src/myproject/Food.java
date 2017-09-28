@@ -1,0 +1,31 @@
+package myproject;
+
+public class Food {
+	public Food(String name, int kcal, String date) {
+		this.name = name;
+		this.kcal = kcal;
+		this.date = date;
+	}
+	
+	private String date;// 2017-9-27
+	private String name;
+	private int kcal;
+	
+	public String getName() {
+		return name;
+	}
+	public int getKcal() {
+		return kcal;
+	}
+	public String getDate() {
+		return date;
+	}
+	
+	
+}
+
+
+
+
+
+

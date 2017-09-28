@@ -1,0 +1,19 @@
+
+public class Account{
+	private int amount;
+	
+	private void deposit(int param) {
+		amount = amount + param;
+	}
+	
+	public int withdraw(int param) {
+		if(amount < param) {
+			System.out.println("출금할 수 없습니다.");
+			return 0;
+		}
+		
+		amount = amount - param;
+		return param;
+	}
+	
+}
